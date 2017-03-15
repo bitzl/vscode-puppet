@@ -1,8 +1,10 @@
 {
-  "name": "puppet",
-  "description": "Puppet language support, snippets and linter for Visual Studio Code",
+  "name": "vscode-puppet",
+  "displayName": "Puppet Support",
+  "description": "Language support, snippets and linter for Puppet.",
+  "private": true,
   "version": "0.3.1",
-  "publisher": "Borke",
+  "publisher": "bitzl",
   "license": "MIT",
   "keywords": [
     "puppet",
