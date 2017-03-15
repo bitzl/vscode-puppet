@@ -48,7 +48,7 @@ To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one 
 
 ## Contributions
 
-Contributions are welcomed, please file issues and pull requests via the [project homepage](https://github.com/blindly/vscode-puppet).
+Contributions are welcomed. Feel free to add issues and pull requests :-)
 
 ### Thanks to contributors
 - [blindly](https://github.com/blindly)
