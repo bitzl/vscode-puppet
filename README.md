@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bitzl/vscode-puppet.svg?branch=master)](https://travis-ci.org/bitzl/vscode-puppet)
+
 # Puppet Extension for Visual Studio Code, now with Linter
 
 The Puppet Extension for Visual Studio Code offers rich language support for Puppet DSL, snippets, and linter when using [Visual Studio Code](http://code.visualstudio.com).
