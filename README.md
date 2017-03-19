@@ -61,6 +61,7 @@ Thanks to all contributors
 - [mikemimik](https://github.com/mikemimik)
 
 ## Changelog
+- 0.4.1 - Add metadata for extension store.
 - 0.4.0 - Fork as bitzl/vscode-puppet for further development:
   - Fixes linting on Windows
   - Fixes endless "reload to activate this extension" prompt.

@@ -1,64 +1,76 @@
 {
-  "name": "vscode-puppet",
-  "displayName": "Puppet Support",
-  "description": "Language support, snippets and linter for Puppet.",
-  "private": true,
-  "version": "0.4.0",
-  "publisher": "bitzl",
-  "license": "MIT",
-  "keywords": [
-    "puppet",
-    "puppet-lint"
-  ],
-  "icon": "puppet.png",
-  "engines": {
-    "vscode": "^1.0.0"
-  },
-  "homepage": "https://github.com/bitzl/vscode-puppet",
-  "bugs": {
-    "url" : "https://github.com/bitzl/vscode-puppet/issues"
-  },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/bitzl/vscode-puppet.git"
-  },
-  "categories": [
-    "Linters",
-    "Languages",
-    "Snippets"
-  ],
-  "main": "./out/src/extension",
-  "contributes": {
-    "languages": [{
-      "id": "puppet",
-      "aliases": ["Puppet", "puppet"],
-      "extensions": [".pp", ".epp"],
-      "configuration": "./puppet.configuration.json"
-    }],
-    "grammars": [{
-      "language": "puppet",
-      "scopeName": "source.puppet",
-      "path": "./syntaxes/puppet.tmLanguage"
-    }],
-    "snippets": [{
-      "language": "puppet",
-      "path": "./snippets/snippets.json"
-    }]
-  },
-  "activationEvents": [
-    "onLanguage:puppet"
-  ],
-  "scripts": {
-    "compile": "tsc -watch -p ./",
-    "vscode:prepublish": "tsc -p ./",
-    "test": "mocha -u tdd --colors out/test",
-    "postinstall": "node ./node_modules/vscode/bin/install"
-  },
-  "devDependencies": {
-    "typescript": "^2.0.3",
-    "vscode": "^1.0.0",
-    "mocha": "^2.3.3",
-    "@types/node": "^6.0.40",
-    "@types/mocha": "^2.2.32"
-  }
+    "name": "vscode-puppet",
+    "displayName": "Puppet Support",
+    "description": "Language support, snippets and linter for Puppet.",
+    "private": true,
+    "version": "0.4.1",
+    "publisher": "bitzl",
+    "license": "MIT",
+    "keywords": [
+        "puppet",
+        "puppet-lint"
+    ],
+    "icon": "puppet.png",
+    "engines": {
+        "vscode": "^1.0.0"
+    },
+    "homepage": "https://github.com/bitzl/vscode-puppet",
+    "bugs": {
+        "url": "https://github.com/bitzl/vscode-puppet/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bitzl/vscode-puppet.git"
+    },
+    "categories": [
+        "Linters",
+        "Languages",
+        "Snippets"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "languages": [
+            {
+                "id": "puppet",
+                "aliases": [
+                    "Puppet",
+                    "puppet"
+                ],
+                "extensions": [
+                    ".pp",
+                    ".epp"
+                ],
+                "configuration": "./puppet.configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "puppet",
+                "scopeName": "source.puppet",
+                "path": "./syntaxes/puppet.tmLanguage"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "puppet",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    },
+    "activationEvents": [
+        "onLanguage:puppet"
+    ],
+    "scripts": {
+        "compile": "tsc -watch -p ./",
+        "vscode:prepublish": "tsc -p ./",
+        "test": "mocha -u tdd --colors out/test",
+        "postinstall": "node ./node_modules/vscode/bin/install"
+    },
+    "devDependencies": {
+        "typescript": "^2.0.3",
+        "vscode": "^1.0.0",
+        "mocha": "^2.3.3",
+        "@types/node": "^6.0.40",
+        "@types/mocha": "^2.2.32"
+    }
 }
