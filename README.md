@@ -2,9 +2,7 @@
 
 # Puppet Extension for Visual Studio Code
 
-The Puppet Extension for Visual Studio Code offers rich language support for Puppet DSL, snippets, and linter when using [Visual Studio Code](http://code.visualstudio.com).
-
-*This extension was created as a fork from [blindly/vscode-puppet](https://github.com/blindly/vscode-puppet) to integrate bugfixes. A future merge with the original project is still possible.*
+The Puppet Extension for Visual Studio Code offers rich language support for Puppet DSL, snippets, and linter for [Visual Studio Code](http://code.visualstudio.com).
 
 ## Requirements
 This extension relies on [puppet-lint](http://puppet-lint.com/) to check your Puppet code. Use Ruby `gem` to install:
@@ -59,6 +57,8 @@ Thanks to all contributors
 - [jgreat](https://github.com/jgreat)
 - [dhollinger](https://github.com/dhollinger)
 - [mikemimik](https://github.com/mikemimik)
+
+*This extension was created as a fork from [blindly/vscode-puppet](https://github.com/blindly/vscode-puppet) to integrate bugfixes. A future merge with the original project is still possible.*
 
 ## Changelog
 - 0.4.1 - Add metadata for extension store.
