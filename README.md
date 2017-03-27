@@ -40,9 +40,11 @@ sudo gem install puppet-lint
 - zfs
 - zpool
 
-### Disable Checks
-To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one per line. For full list of switches run `puppet-lint --help`
+### Configure Checks
 
+Checks are performed via `puppet-lint`. To enable or disable certain checks different from default create a `~/.puppet-lint.rc` file in project root. Add switches, one per line. For full list of switches run `puppet-lint --help`.
+
+Example:
 ```
 --no-80chars-check
 --no-case_without_default-check
@@ -52,7 +54,7 @@ To disable various checks, create a `~/.puppet-lint.rc` file. Add switches, one 
 
 Contributions are welcomed. Feel free to add issues and pull requests :-)
 
-Thanks to all contributors
+Thanks to all contributors:
 - [blindly](https://github.com/blindly)
 - [jgreat](https://github.com/jgreat)
 - [dhollinger](https://github.com/dhollinger)
@@ -61,6 +63,7 @@ Thanks to all contributors
 *This extension was created as a fork from [blindly/vscode-puppet](https://github.com/blindly/vscode-puppet) to integrate bugfixes. A future merge with the original project is still possible.*
 
 ## Changelog
+- 0.4.2 - Add documentation.
 - 0.4.1 - Add metadata for extension store.
 - 0.4.0 - Fork as bitzl/vscode-puppet for further development:
   - Fixes linting on Windows
