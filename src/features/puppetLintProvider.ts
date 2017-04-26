@@ -31,19 +31,19 @@ export default class PuppetLintProvider {
         else {
             command = "puppet-lint";
         }
-        commandOptions.concat
+
         let childProcess = cp.spawn(command, commandOptions, options);
         if (childProcess.pid) {
             childProcess.stdout.on('data', (data: Buffer) => {
                 decoded += data;
             });
             childProcess.stdout.on('end', () => {
-                decoded.split("\n").forEach( item => {
+                decoded.split("\n").forEach(item => {
                     if (item) {
                         let error = item.split(":");
                         let severity = error[0].toLowerCase() === "warning" ? vscode.DiagnosticSeverity.Warning : vscode.DiagnosticSeverity.Error;
                         let message = "puppet-lint: " + error[0] + ": " + error[2];
-                        let range = new vscode.Range(Number(error[1]) - 1, 0, Number(error[1]) -1, 300);
+                        let range = new vscode.Range(Number(error[1]) - 1, 0, Number(error[1]) - 1, 300);
                         let diagnostic = new vscode.Diagnostic(range, message, severity);
                         diagnostics.push(diagnostic);
                     }
@@ -61,7 +61,7 @@ export default class PuppetLintProvider {
         this.diagnosticCollection = vscode.languages.createDiagnosticCollection();
 
         vscode.workspace.onDidOpenTextDocument(this.doPuppetLint, this, subscriptions);
-        vscode.workspace.onDidCloseTextDocument((textDocument)=> {
+        vscode.workspace.onDidCloseTextDocument((textDocument) => {
             this.diagnosticCollection.delete(textDocument.uri);
         }, null, subscriptions);
 
