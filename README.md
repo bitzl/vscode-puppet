@@ -55,14 +55,18 @@ Example:
 Contributions are welcomed. Feel free to add issues and pull requests :-)
 
 Thanks to all contributors:
+
 - [blindly](https://github.com/blindly)
 - [jgreat](https://github.com/jgreat)
 - [dhollinger](https://github.com/dhollinger)
 - [mikemimik](https://github.com/mikemimik)
+- [pjmagee](https://github.com/pjmagee)
 
 *This extension was created as a fork from [blindly/vscode-puppet](https://github.com/blindly/vscode-puppet) to integrate bugfixes. A future merge with the original project is still possible.*
 
 ## Changelog
+
+- 0.4.3 - Added Puppet Parser Validate support.
 - 0.4.2 - Add documentation.
 - 0.4.1 - Add metadata for extension store.
 - 0.4.0 - Fork as bitzl/vscode-puppet for further development:

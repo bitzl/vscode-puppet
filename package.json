@@ -29,33 +29,27 @@
     ],
     "main": "./out/src/extension",
     "contributes": {
-        "languages": [
-            {
-                "id": "puppet",
-                "aliases": [
-                    "Puppet",
-                    "puppet"
-                ],
-                "extensions": [
-                    ".pp",
-                    ".epp"
-                ],
-                "configuration": "./puppet.configuration.json"
-            }
-        ],
-        "grammars": [
-            {
-                "language": "puppet",
-                "scopeName": "source.puppet",
-                "path": "./syntaxes/puppet.tmLanguage"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "puppet",
-                "path": "./snippets/snippets.json"
-            }
-        ]
+        "languages": [{
+            "id": "puppet",
+            "aliases": [
+                "Puppet",
+                "puppet"
+            ],
+            "extensions": [
+                ".pp",
+                ".epp"
+            ],
+            "configuration": "./puppet.configuration.json"
+        }],
+        "grammars": [{
+            "language": "puppet",
+            "scopeName": "source.puppet",
+            "path": "./syntaxes/puppet.tmLanguage"
+        }],
+        "snippets": [{
+            "language": "puppet",
+            "path": "./snippets/snippets.json"
+        }]
     },
     "activationEvents": [
         "onLanguage:puppet"
