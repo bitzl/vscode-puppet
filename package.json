@@ -1,7 +1,7 @@
 {
     "name": "vscode-puppet",
     "displayName": "Puppet Support",
-    "description": "Language support, snippets and linter for Puppet.",
+    "description": "Language support, snippets, parser diagnostics and linter for Puppet.",
     "private": true,
     "version": "0.4.2",
     "publisher": "bitzl",
