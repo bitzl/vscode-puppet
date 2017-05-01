@@ -10,7 +10,7 @@
         "puppet",
         "puppet-lint"
     ],
-    "icon": "puppet.png",
+    "icon": "P-Icon-Amber-Black-sm.png",
     "engines": {
         "vscode": "^1.0.0"
     },
