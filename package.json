@@ -37,7 +37,8 @@
             ],
             "extensions": [
                 ".pp",
-                ".epp"
+                ".epp",
+                "Puppetfile"
             ],
             "configuration": "./puppet.configuration.json"
         }],
