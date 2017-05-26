@@ -38,7 +38,13 @@ export default class PuppetParserProvider {
         let options: cp.SpawnOptions = vscode.workspace.rootPath ? { cwd: vscode.workspace.rootPath, shell: true } : undefined;
 
         let command = "";
-        let commandOptions = ["parser", "validate", "\"" + textDocument.fileName + "\""];
+        let subcommand;
+        if (textDocument.fileName.endsWith('.epp')) {
+            subcommand = "epp";
+        } else {
+            subcommand = "parser";
+        }
+        let commandOptions = ["parser", subcommand, "\"" + textDocument.fileName + "\""];
 
         if (process.platform === "win32") {
             command = "cmd.exe";

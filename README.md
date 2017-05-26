@@ -66,7 +66,8 @@ Thanks to all contributors:
 
 ## Changelog
 
-- 0.4.3 - Added Puppet Parser Validate support.
+- 0.4.4 - Add Puppetfile to supported file types
+- 0.4.3 - Add Puppet Parser Validate support.
 - 0.4.2 - Add documentation.
 - 0.4.1 - Add metadata for extension store.
 - 0.4.0 - Fork as bitzl/vscode-puppet for further development:
