@@ -3,7 +3,7 @@
     "displayName": "Puppet Support",
     "description": "Language support, snippets, parser diagnostics and linter for Puppet.",
     "private": true,
-    "version": "0.4.4",
+    "version": "0.4.5",
     "publisher": "bitzl",
     "license": "MIT",
     "keywords": [
